@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    overflow-x: hidden;
 }
 /*=============================================================== header =========================================================================*/
 .navbar {
@@ -43,6 +44,16 @@ body {
     background-color: navy;
     color: white;
     cursor: pointer;
+}
+
+.dropdown .menu{
+    outline: none;
+    color: navy;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 2vw;
+    margin-top: 5px;
 }
 
 .brand {
@@ -351,7 +362,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 50px 10vw;
-    width: 100vw;
     text-align: center;
     background-color: white;
 }
@@ -413,7 +423,7 @@ body {
     align-items: center;
     max-width: 100%;
     margin: auto;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .featured-slides {
