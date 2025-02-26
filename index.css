@@ -1,0 +1,616 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+/*=============================================================== header =========================================================================*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 10vw;
+    color: navy;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .search-section{
+    display: flex;
+}
+
+.navbar .search-section .sec{
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.navbar .search-section .sec input{
+    outline: none;
+    border: none;
+    width: 20vw;
+}
+
+.navbar .search-section button{
+    outline: none;
+    border: none;
+    background-color: navy;
+    color: white;
+    cursor: pointer;
+}
+
+.brand {
+    margin: 0;
+    font-size: 3vw;
+}
+
+.brand span{
+    margin-left: -12px;
+    font-style: italic;
+    font-size: 2.0vw;
+    color: red;
+    text-decoration: underline;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 10px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: navy;
+    padding: 8px 12px;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: navy;
+    padding: 8px 12px;
+    font-size: 20px;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+    padding: 2px;
+}
+
+.dropdown-menu a {
+    color: navy;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown img {
+    color: navy;
+    font-size: 14px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: navy;
+    cursor: pointer;
+}
+/*==================================================== slider images ======================================================================*/
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 99vh;
+    object-fit: cover;
+}
+
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%);
+    color: blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+.caption h3{
+    color: red;
+    font-size: 4.9vw;
+    text-align: start;
+}
+.caption p{
+    text-align: start;
+    margin-top: -10px;
+}
+/*============================================================== responsive ===================================================================*/
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: navy;
+        position: absolute;
+        color: white;
+        top: 40px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .nav-links li {
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .nav-links li a{
+        color: white;
+    }
+
+    .dropdown-menu li a {
+        color: navy;
+        display: block;
+        font-size: 14px;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        list-style: none;
+        padding: 5px;
+        margin: 0;
+        color: navy;
+        top: 10px;
+        left: 90px;
+        width: 150px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .slide img {
+        max-height: 400px;
+    }
+
+    .prev, .next {
+        padding: 5px;
+    }
+    .caption {
+        font-size: 14px;
+        padding: 8px 12px;
+        bottom: 15%;
+    }
+    .navbar .search-section{
+        display: none;
+    }
+}
+
+/*======================================================================== About Us Section =========================================================*/
+.aboutus-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: white;
+}
+
+.aboutus-container img {
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.aboutus-container .info {
+    max-width: 500px;
+    text-align: left;
+}
+
+.aboutus-container .info p{
+    color: gray;
+    margin-top: -10px;
+    font-style: italic;
+}
+
+.aboutus-container button {
+    padding: 10px 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*======================================================================== Product Details ===================================================================*/
+.product-details-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.product-details-container .card img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/*============================================================================= Newsletter ==================================================================*/
+.newsletter {
+    padding: 20px;
+    background-color: navy;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.newsletter h1 {
+    font-size: 2rem;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: white;
+    color: navy;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*==================================================================== Featured Products Section =========================================================*/
+.featured-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10vw;
+    width: 100vw;
+    text-align: center;
+    background-color: white;
+}
+
+.featured-products h1 {
+    font-size: 2.5rem;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+.featured-products .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.featured-products .card {
+    width: 200px;
+    border: 2px solid navy;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.featured-products .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.featured-products .card h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.featured-products .card h5 {
+    margin-top: -20px;
+    font-size: 1rem;
+    color: gray;
+    font-style: italic;
+}
+
+.featured-products .card h6 {
+    margin-top: -25px;
+    font-size: 0.8rem;
+}
+
+.featured-slider {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    overflow-x: auto;
+}
+
+.featured-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card p {
+    margin-top: -25px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*======================================================================== Categories Section ===================================================*/
+.categories {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.categories h1 {
+    font-size: 2.5rem;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+.categories .category-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categories .category-card {
+    border: 2px solid navy;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.categories .category-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.categories .category-card h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/*================================================= Customer Reviews Section ==========================================*/
+.customer-reviews {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.customer-reviews h1 {
+    font-size: 2.5rem;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+.review-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.review-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-card {
+    min-width: 300px;
+    border: 2px solid navy;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.review-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.review-card span {
+    font-size: 1.2rem;
+    color: gold;
+}
+
+.review-card h4 {
+    font-size: 1.2rem;
+    color: navy;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*============================================== Footer Links ================================================*/
+.footer {
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.footer-links .footer-column {
+    width: 30%;
+}
+
+.footer-links .footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-links .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links .footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links .footer-column ul li a:hover {
+    text-decoration: underline;
+}

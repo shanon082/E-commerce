@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    background: linear-gradient(45deg, rgb(10, 10, 133),black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form{
+    background-color: white;
+    border-radius: 10px;
+    width: 450px;
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+form h1{
+    color: rgb(10, 10, 133);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form h3{
+    color: rgb(91, 90, 90);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.username, .password, .email, .confirm_password{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 18px;
+}
+
+input{
+    outline: none;
+    border: 2px solid rgb(10, 10, 133);
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 5px;
+    margin-top: 2px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.links a{
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+.links a:hover{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+button{
+    padding: 5px 15px;
+    background-color: rgb(10, 10, 204);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.error_msg{
+    color: red;
+    font-style: italic;
+}
