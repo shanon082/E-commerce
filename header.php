@@ -73,7 +73,7 @@
                         <li><a href="#">Warranty</a></li>
                     </ul>
                 </li>
-                <li><a href="./sections/cart.php"><img src="./images/cart.png" alt="" style="width: 20px;"> Cart</a></li>
+                <li><a href="cart.php"><img src="./images/cart.png" alt="" style="width: 20px;"> Cart</a></li>
             </ul>
         </nav>
     </header>

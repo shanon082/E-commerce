@@ -15,76 +15,7 @@ session_start();
 </head>
 
 <body>
-  <header>
-    <!-- header -->
      <?php include 'header.php'; ?>
-    <!-- <nav class="navbar">
-      <ul class="nav-links">
-        <li class="dropdown"><a class="menu">☰</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Cart</a></li>
-            <li><a href="#">Account</a></li>
-          </ul>
-        </li>
-        <li><h2 class="brand">TUKOLE <span>business</span></h2></li>
-      </ul>      
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <div class="search-section">
-        <div class="sec">
-          <i></i>
-          <input
-            type="search"
-            name="search"
-            id=""
-            placeholder="Search product, brand and category" />
-        </div>
-        <button type="submit">search</button>
-      </div>
-      <ul class="nav-links" id="nav-links">
-        <li class="dropdown">
-          <?php if (isset($_SESSION['username'])): ?>
-            <a href="#"><img src="./images/account.png" alt="" style="width: 20px;"> Hi, <?php echo $_SESSION['username']; ?> ▼</a>
-            <ul class="dropdown-menu">
-              <li><a href="#"><i></i>My Account</a></li>
-              <li><a href="#"><i></i>Orders</a></li>
-              <li><a href="#"><i></i>Inbox</a></li>
-              <li><a href="#"><i></i>Wishlist</a></li>
-              <li><a href="#"><i></i>Vouchers</a></li>
-              <hr>
-              <li><a href="./login_and_signup/logout.php">Logout</a></li>
-            </ul>
-          <?php else: ?>
-            <a href="#"><img src="./images/account.png" alt="" style="width: 20px;"> Account▼</a>
-            <ul class="dropdown-menu">
-              <li><a href="./login_and_signup/signup.php">SignUp</a></li>
-              <li><a href="./login_and_signup/login.php">Login</a></li>
-            </ul>
-          <?php endif; ?>
-        </li>
-        <li class="dropdown">
-          <a href="#"><img src="./images/help.png" alt="" style="width: 20px;"> Help▼</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Place an Order</a></li>
-            <li><a href="#">Payments Options</a></li>
-            <li><a href="#">Delivery Timelines & Track your order</a></li>
-            <li><a href="#">Returns and Refunds</a></li>
-            <li><a href="#">Warranty</a></li>
-          </ul>
-        </li>
-        <li><a href="#"><img src="./images/cart.png" alt="" style="width: 20px;"> Cart</a></li>
-      </ul>
-      </na>
-  </header> -->
-
-  
   <!-- slider images -->
   <section class="slideshow-container">
     <div class="slide fade">
@@ -249,46 +180,7 @@ session_start();
     </div>
   </section>
 
-  <!-- Newsletter Section -->
-  <section class="newsletter">
-    <h1>Sign Up for Updates & Newsletter</h1>
-    <div class="email">
-      <input type="email" placeholder="Enter your Email" />
-      <button type="submit">Subscribe Now</button>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <section class="footer">
-    <div class="footer-links">
-      <div class="footer-column">
-        <h4>Customer Service</h4>
-        <ul>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Track Order</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h4>About Us</h4>
-        <ul>
-          <li><a href="#">Our Story</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Press</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h4>Follow Us</h4>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-      </div>
-    </div>
-    <p>&copy; 2025 eCommerce. All rights reserved.</p>
-  </section>
+  <?php include 'footer.php'; ?>
   <script src="script.js"></script>
 </body>
 
