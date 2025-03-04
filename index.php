@@ -1,3 +1,7 @@
+<?php 
+session_start(); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,10 +15,10 @@
 </head>
 
 <body>
-  <?php session_start(); ?>
   <header>
     <!-- header -->
-    <nav class="navbar">
+     <?php include 'header.php'; ?>
+    <!-- <nav class="navbar">
       <ul class="nav-links">
         <li class="dropdown"><a class="menu">☰</a>
           <ul class="dropdown-menu">
@@ -78,7 +82,9 @@
         <li><a href="#"><img src="./images/cart.png" alt="" style="width: 20px;"> Cart</a></li>
       </ul>
       </na>
-  </header>
+  </header> -->
+
+  
   <!-- slider images -->
   <section class="slideshow-container">
     <div class="slide fade">
@@ -124,6 +130,7 @@
           <h5>$100</h5>
           <h6>Review: ⭐⭐⭐⭐⭐</h6>
           <p>High-quality fabric, available in various sizes and colors.</p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
         <div class="card">
           <img src="./images/phone.png" alt="Product 2" />
@@ -131,6 +138,7 @@
           <h5>$200</h5>
           <h6>Review: ⭐⭐⭐⭐⭐</h6>
           <p>Latest model with advanced features and sleek design.</p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
         <div class="card">
           <img src="./images/lap.png" alt="Product 3" />
@@ -138,13 +146,15 @@
           <h5>$300</h5>
           <h6>Review: ⭐⭐⭐⭐⭐</h6>
           <p>Powerful performance with long battery life and durability.</p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
         <div class="card">
           <img src="./images/coofee.png" alt="" />
-          <h4>Cofeee 1 acre</h4>
+          <h4>Cofeee 1 acre</h5>
           <h5>negotiable</h5>
           <h6>Review: ⭐⭐⭐⭐⭐</h6>
           <p></p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
         <div class="card">
           <img src="./images/flash.png" alt="" />
@@ -152,6 +162,7 @@
           <h5>$2 @</h5>
           <h6>Review: ⭐⭐⭐⭐⭐</h6>
           <p>Latest model with advanced features and sleek design.</p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
       </div>
       <!-- <button class="prev" onclick="prevFeaturedSlide()">&#10094;</button>
