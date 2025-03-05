@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="cart_page.css">
 </head>
 
 <body>
@@ -16,8 +16,7 @@ session_start();
 
     <div class="contain">
         <section>
-            <div class="cart_card">
-                
+            <div class="cart_card">                
                 <div class="cart">
                 <h1>Cart (3)</h1><hr>
                     <div class="cart-item">
@@ -39,7 +38,11 @@ session_start();
                         <div class="cart-item-details">
                             <h4>Product 2</h4>
                             <p>Price: $100</p>
-                            <p>Quantity: 1</p>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
                             <button>Remove</button>
                         </div>
                     </div>
@@ -49,14 +52,18 @@ session_start();
                         <div class="cart-item-details">
                             <h4>Product 3</h4>
                             <p>Price: $100</p>
-                            <p>Quantity: 1</p>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
                             <button>Remove</button>
                         </div>
                     </div>
                     <hr>
                 </div>
                 <div class="cart-total">
-                    <h3>Total: $300</h3>
+                    <h3>Total: <span>$300</span></h3>
                     <button>Checkout</button>
                 </div>
             </div>
@@ -70,6 +77,16 @@ session_start();
                         <img src="./images/cloth.png" alt="Product 1" />
                         <h4>Product 1</h4>
                         <p>Price: $100</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/phone.png" alt="Product 2" />
+                        <h4>Product 2</h4>
+                        <p>Price: $200</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/lap.png" alt="Product 3" />
+                        <h4>Product 3</h4>
+                        <p>Price: $300</p>
                     </div>
                 </div>
             </div>
