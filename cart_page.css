@@ -147,11 +147,43 @@
 }
 
 .top-selling-items .card h4 {
-    margin: 10px 0;
+    margin: 5px 0;
     font-size: 1.2rem;
 }
 
 .top-selling-items .card p {
     font-size: 1rem;
+    margin-top: -8px;
     color: gray;
+}
+
+.login-prompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 380px);
+    text-align: center;
+}
+
+.login-prompt .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.login-prompt .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.login-prompt .card a {
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-prompt .card a:hover {
+    text-decoration: underline;
 }
