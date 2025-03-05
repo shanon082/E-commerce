@@ -37,6 +37,7 @@ body {
     outline: none;
     border: none;
     width: 20vw;
+    height: 50px;
 }
 
 .navbar .search-section button{

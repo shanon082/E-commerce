@@ -46,7 +46,7 @@
                     <h1>Newsletter Preferences</h1><hr>
                     <div class="pref">
                         <p>Manage your email communications to stay updated with the latest news and offers.</p>
-                        <a href="#">Edit newsletter preferences</a>
+                        <a href="newsletter_pref.php">Edit newsletter preferences</a>
                     </div>
                 </div>
             </div>

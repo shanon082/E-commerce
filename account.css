@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* ====================================================================account mainpage==================================================================== */
 .account {
     width: 100%;
     display: flex;
@@ -73,7 +73,7 @@
 .card-details a:hover {
     text-decoration: underline;
 }
-
+/* ===========================================================editting address============================================================= */
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -113,4 +113,28 @@ button[type="submit"]:hover {
     background-color: white;
     color: navy;
     border: 1px solid navy;
+}
+/* ==================================================================== newsletter ================================================================ */
+.radio-btn, .check {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.check {
+    margin-top: 40px;
+}
+
+.radio-btn input, .check input {
+    margin-right: 10px;
+}
+
+h4{
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: gray;
+}
+.head h1{
+    margin-bottom: 10px;
 }
