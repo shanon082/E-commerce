@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="account.css">
 </head>
 <body>
-    <?php include '../header.php'; ?>
+    <?php include 'header.php'; ?>
     <div class="account">
         <div class="account-card">
             <h1>Account Overview</h1>
@@ -52,6 +52,6 @@
             </div>
         </div>
     </div>
-    <?php include '../footer.php'; ?>
+    <?php include 'footer.php';?>
 </body>
 </html>

@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsletter Preferences</title>
+    <title>Document</title>
     <link rel="stylesheet" href="account.css">
 </head>
 <body>
-    <?php include '../header.php'; ?>
+    <?php include 'header.php'; ?>
     <div class="account">
         <div class="account-card">
             <div class="head">
@@ -16,7 +16,7 @@
                 <a href="myAccount.php"><<< Back</a>
             </div><hr>
             <form action="newsletter_pref_processing.php" method="post" class="form-grid">
-                <div class="form-group">
+                <div class="">
                     <h4>Define your preference</h4>
                     <div class="radio-btn">
                         <input type="radio" name="newsletter" id="yes" value="yes">
@@ -35,6 +35,6 @@
             </form>
         </div>
     </div>
-    <?php include '../footer.php'; ?>
+    <?php include 'footer.php'; ?>
 </body>
 </html>
