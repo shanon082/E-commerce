@@ -14,7 +14,7 @@
             <ul class="nav-links">
                 <li class="dropdown"><a class="menu">☰</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="#">Products</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
