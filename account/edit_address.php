@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="account.css">
 </head>
 <body>
-    <?php include 'header.php'; ?>
+    <?php include '../header.php'; ?>
     <div class="account">
         <div class="account-card">
             <div class="head">
@@ -51,6 +51,6 @@
             </form>
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include '../footer.php'; ?>
 </body>
 </html>
