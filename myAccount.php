@@ -24,7 +24,7 @@
                 <div class="card-details">
                     <div class="head">
                     <h1>Address Book</h1>
-                    <a href="#">Edit</a>
+                    <a href="edit_address.php">Edit</a>
                     </div>                  
                     <hr>
                     <div class="add-info">

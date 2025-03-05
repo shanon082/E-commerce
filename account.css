@@ -8,7 +8,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 90px;
     margin-bottom: 50px;
 }
 
@@ -45,21 +45,22 @@
 .card-details .credit p,
 .card-details .pref p {
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
-.card-details .head {
+.head {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.card-details .head a {
+.head a {
     color: navy;
     text-decoration: none;
     font-weight: bold;
 }
 
-.card-details .head a:hover {
+.head a:hover {
     text-decoration: underline;
 }
 
@@ -71,4 +72,45 @@
 
 .card-details a:hover {
     text-decoration: underline;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    grid-column: span 2;
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+button[type="submit"]:hover {
+    background-color: white;
+    color: navy;
+    border: 1px solid navy;
 }
