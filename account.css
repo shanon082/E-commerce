@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.account {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.account-card {
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.account-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.card-details {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.card-details h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-details .info p,
+.card-details .add-info p,
+.card-details .credit p,
+.card-details .pref p {
+    margin-bottom: 10px;
+}
+
+.card-details .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-details .head a {
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-details .head a:hover {
+    text-decoration: underline;
+}
+
+.card-details a {
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-details a:hover {
+    text-decoration: underline;
+}
