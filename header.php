@@ -47,7 +47,7 @@
                     <?php if (isset($_SESSION['username'])): ?>
                         <a href="#"><img src="./images/account.png" alt="" style="width: 20px;"> Hi, <?php echo $_SESSION['username']; ?> ▼</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#"><i></i>My Account</a></li>
+                            <li><a href="myAccount.php"><i></i>My Account</a></li>
                             <li><a href="#"><i></i>Orders</a></li>
                             <li><a href="#"><i></i>Inbox</a></li>
                             <li><a href="#"><i></i>Wishlist</a></li>

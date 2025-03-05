@@ -31,7 +31,7 @@ form h3{
     margin-bottom: 10px;
 }
 
-.username, .password, .email, .confirm_password{
+.username, .password, .email, .confirm_password, .phone{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -43,6 +43,7 @@ label{
 
 input{
     outline: none;
+    display: block;
     border: 2px solid rgb(10, 10, 133);
     height: 30px;
     border-radius: 5px;

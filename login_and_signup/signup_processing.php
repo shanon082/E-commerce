@@ -6,6 +6,8 @@ require_once ("../db.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
+    $phone = $_POST["phone"];
+    $phone = preg_replace("/[^0-9]/", "", $phone);
     $email = $_POST["email"];
     $password = $_POST["password"];
     $confirmPassword = $_POST["conf_password"];
@@ -40,9 +42,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 header("location:signup.php");
             } else {
                 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-                $sql = "INSERT INTO userdetails (username, email, password) VALUES (:username, :email, :password);";
+                $sql = "INSERT INTO userdetails (username, phone, email, password) VALUES (:username, :phone, :email, :password);";
                 $stmt = $conn -> prepare($sql);
                 $stmt -> bindParam(":username", $username);
+                $stmt -> bindParam(":phone", $phone);
                 $stmt -> bindParam(":email", $email);
                 $stmt -> bindParam(":password", $hashedPassword);
 

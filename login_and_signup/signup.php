@@ -18,6 +18,10 @@ session_start();
                 <label for="username">Username:</label>
                 <input type="text" placeholder="Username" name="username" required>
             </div>
+            <div class="phone">
+                <label for="phone">Phone number:</label>
+                <input type="tel" placeholder="e.g. 07xxxxxxxxx" name="phone" required>
+            </div>
             <div class="email">
                 <label for="email">Email</label>
                 <input type="email" placeholder="email" name="email" required>
