@@ -25,7 +25,11 @@ session_start();
                         <div class="cart-item-details">
                             <h4>Product 1</h4>
                             <p>Price: $100</p>
-                            <p>Quantity: 1</p>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
                             <button>Remove</button>
                         </div>
                     </div>

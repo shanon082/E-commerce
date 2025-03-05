@@ -50,3 +50,22 @@
     margin-top: 10px;
     color: white;
 }
+
+.cart-item .cart-item-details button:hover{
+    background-color: white;
+    color: navy;
+    border: 1px solid navy;
+}
+
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.quantity button{
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 8px;
+}
