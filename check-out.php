@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,26 +29,50 @@
                 </div>
             </div>
             <div class="delivery-method">
-                <div class="head">
-                    <h2>2.Delivery Method</h2>
-                    <button>Edit</button>
-                </div>
+                <h2>2.Delivery Method</h2>
                 <div class="method">
-                    <p>Standard Delivery</p>
-                    <p>Estimated delivery date: 12/12/2021</p>
+                    <div class="method-card">
+                        <h3>Standard Delivery</h3>
+                        <p>3-5 days</p>
+                        <p>Free</p>
+                        <button>Select</button>
+                    </div>
+                    <div class="method-card">
+                        <h3>Express Delivery</h3>
+                        <p>1-2 days</p>
+                        <p>$10</p>
+                        <button>Select</button>
+                    </div>
                 </div>
-                <div class="payment-method">
-                    <div class="head">
-                        <h2>3.Payment Method</h2>
-                        <button>Edit</button>
-                    </div>
-                    <div class="method">
-                        <p>Mobile Money</p>
-                        <p>Pay with mobile money</p>
-                    </div>
-                    </div>
+            </div>
+            <button>Confirm delivery details</button>
         </div>
-
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="summary">
+                <div class="summary-item">
+                    <p>Product 1</p>
+                    <p>$100</p>
+                </div>
+                <div class="summary-item">
+                    <p>Product 2</p>
+                    <p>$200</p>
+                </div>
+                <div class="summary-item">
+                    <p>Product 3</p>
+                    <p>$300</p>
+                </div>
+                <div class="summary-item">
+                    <p>Delivery</p>
+                    <p>Free</p>
+                </div>
+                <div class="summary-item">
+                    <p>Total</p>
+                    <p>$600</p>
+                </div>
+            </div>
+            <button>Confirm Order</button>
+        </div>
     </div>
     <?php include "footer.php"; ?>
 </body>
