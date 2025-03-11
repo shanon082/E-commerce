@@ -55,27 +55,33 @@ session_start();
     <div class="featured-slider">
       <div class="featured-slides">
         <div class="card">
-          <img src="./images/cloth.png" alt="Product 1" />
-          <h4>Product 1</h4>
-          <h5>$100</h5>
-          <h6>Review: ⭐⭐⭐⭐⭐</h6>
-          <p>High-quality fabric, available in various sizes and colors.</p>
+          <a href="product_description.php?id=1">
+            <img src="./images/cloth.png" alt="Product 1" />
+            <h4>Product 1</h4>
+            <h5>$100</h5>
+            <h6>Review: ⭐⭐⭐⭐⭐</h6>
+            <p>High-quality fabric, available in various sizes and colors.</p>
+          </a>
           <button class="add-to-cart">Add to Cart</button>
         </div>
         <div class="card">
-          <img src="./images/phone.png" alt="Product 2" />
-          <h4>iPhone 15 Pro Max</h4>
-          <h5>$200</h5>
-          <h6>Review: ⭐⭐⭐⭐⭐</h6>
-          <p>Latest model with advanced features and sleek design.</p>
+          <a href="product_description.php?id=2">
+            <img src="./images/phone.png" alt="Product 2" />
+            <h4>iPhone 15 Pro Max</h4>
+            <h5>$200</h5>
+            <h6>Review: ⭐⭐⭐⭐⭐</h6>
+            <p>Latest model with advanced features and sleek design.</p>
+          </a>
           <button class="add-to-cart">Add to Cart</button>
         </div>
         <div class="card">
-          <img src="./images/lap.png" alt="Product 3" />
-          <h4>Lenovo ThinkPad T442</h4>
-          <h5>$300</h5>
-          <h6>Review: ⭐⭐⭐⭐⭐</h6>
-          <p>Powerful performance with long battery life and durability.</p>
+          <a href="product_description.php?id=3">
+            <img src="./images/lap.png" alt="Product 3" />
+            <h4>Lenovo ThinkPad T442</h5>
+            <h5>$300</h5>
+            <h6>Review: ⭐⭐⭐⭐⭐</h6>
+            <p>Powerful performance with long battery life and durability.</p>
+          </a>
           <button class="add-to-cart">Add to Cart</button>
         </div>
         <div class="card">
