@@ -1,4 +1,4 @@
-<?php
+<a?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -65,7 +65,7 @@ session_start();
                     </div>
                     <div class="cart-total">
                         <h3>Total: <span>$300</span></h3>
-                        <button>Checkout</button>
+                        <a href="check-out.php">Checkout</a>
                     </div>
                 </div>
             </section>
