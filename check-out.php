@@ -7,7 +7,8 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@ session_start();
         <div class="customer-details">
             <div class="customer-address">
                 <div class="head">
-                    <h2>1.Customer Address</h2>
+                    <h2>1. Customer Address</h2><hr>
                     <button>Edit</button>
                 </div>
                 <div class="address">
@@ -29,7 +30,7 @@ session_start();
                 </div>
             </div>
             <div class="delivery-method">
-                <h2>2.Delivery Method</h2>
+                <h2>2. Delivery Method</h2><hr>
                 <div class="method">
                     <div class="method-card">
                         <h3>Standard Delivery</h3>
@@ -45,10 +46,10 @@ session_start();
                     </div>
                 </div>
             </div>
-            <button>Confirm delivery details</button>
+            <button class="confirm-delivery">Confirm delivery details</button>
         </div>
         <div class="order-summary">
-            <h2>Order Summary</h2>
+            <h2>Order Summary</h2><hr>
             <div class="summary">
                 <div class="summary-item">
                     <p>Product 1</p>
@@ -66,12 +67,12 @@ session_start();
                     <p>Delivery</p>
                     <p>Free</p>
                 </div>
-                <div class="summary-item">
+                <div class="summary-item total">
                     <p>Total</p>
                     <p>$600</p>
                 </div>
             </div>
-            <button>Confirm Order</button>
+            <button class="confirm-order">Confirm Order</button>
         </div>
     </div>
     <?php include "footer.php"; ?>

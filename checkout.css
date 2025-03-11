@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 70px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.wrapper h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.customer-details, .order-summary {
+    margin-bottom: 30px;
+}
+
+.customer-address, .delivery-method, .order-summary {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.customer-address .head, .delivery-method .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.customer-address .head h2, .delivery-method .head h2 {
+    font-size: 1.5rem;
+}
+
+.customer-address .head button, .delivery-method .method-card button, .confirm-delivery, .confirm-order {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.customer-address .head button:hover, .delivery-method .method-card button:hover, .confirm-delivery:hover, .confirm-order:hover {
+    background-color: white;
+    color: navy;
+    border: 1px solid navy;
+}
+
+.customer-address .address p, .delivery-method .method-card p, .summary-item p {
+    margin-bottom: 10px;
+}
+
+.delivery-method .method {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-method .method-card {
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.delivery-method .method-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.order-summary .summary {
+    margin-bottom: 20px;
+}
+
+.order-summary .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.order-summary .summary-item.total {
+    font-weight: bold;
+}
