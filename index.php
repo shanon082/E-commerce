@@ -55,7 +55,7 @@ session_start();
     <div class="featured-slider">
       <div class="featured-slides">
         <div class="card">
-          <a href="product_description.php?id=1">
+          <a href="product_description.php">
             <img src="./images/cloth.png" alt="Product 1" />
             <h4>Product 1</h4>
             <h5>$100</h5>

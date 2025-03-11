@@ -1,38 +1,54 @@
-.product-description {
+.wrapper {
     width: 80%;
     margin: 50px auto;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    text-align: center;
+    border-radius: 5px;  
+    
 }
 
-.product-description img {
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.product-details .image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-details .image img {
     width: 100%;
     max-width: 400px;
     height: auto;
     border-radius: 5px;
-    margin-bottom: 20px;
 }
 
-.product-description h1 {
+.product-details .info {
+    flex: 2;
+}
+
+.product-details .info h1 {
     font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.product-details .info h6 {
     margin-bottom: 20px;
 }
 
-.product-description p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.product-description h3 {
+.product-details .info h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
-.product-description button {
+.product-details .info button {
     background-color: navy;
     color: white;
     border: none;
@@ -41,8 +57,79 @@
     cursor: pointer;
 }
 
-.product-description button:hover {
+.product-details .info button:hover {
     background-color: white;
     color: navy;
     border: 1px solid navy;
+}
+
+.product-description, .product-specification {
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.product-description h2, .product-specification h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.product-description h4, .product-specification h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product-description p, .product-specification p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.similar-items {
+    margin-top: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.similar-items h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.similar-items-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.similar-items .card {
+    width: 250px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.similar-items .card img {
+    width: 100%;
+    height: 240px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.similar-items .card h4 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.similar-items .card p {
+    font-size: 1rem;
+    margin-top: -8px;
+    color: gray;
 }
