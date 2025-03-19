@@ -12,8 +12,8 @@ session_start();
 <body>
     <div class="wrapper">
         <form action="signup_processing.php" method="post">
-            <h1>Welcome to ttukole business</h1>
-            <h3>Type in the details to login or create your account</h3>
+            <h1>Welcome to ttukole business Admin Panel</h1>
+            <h3>Type in the details to login</h3>
             <div class="username">
                 <label for="username">Username:</label>
                 <input type="text" placeholder="Username" name="username" required>
